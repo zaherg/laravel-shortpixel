@@ -1,6 +1,9 @@
-[<img src="https://travis-ci.org/short-pixel-optimizer/shortpixel-php.svg?branch=master" alt="Build Status">](https://travis-ci.org/short-pixel-optimizer/shortpixel-php)
-
 # Non-Official Laravel Package for ShortPixel SDK and API 
+
+[![Latest Stable Version](https://poser.pugx.org/zaherg/laravel-shortpixel/v/stable)](https://packagist.org/packages/zaherg/laravel-shortpixel)
+[![Latest Unstable Version](https://poser.pugx.org/zaherg/laravel-shortpixel/v/unstable)](https://packagist.org/packages/zaherg/laravel-shortpixel)
+[![License](https://poser.pugx.org/zaherg/laravel-shortpixel/license)](https://packagist.org/packages/zaherg/laravel-shortpixel)
+[![composer.lock available](https://poser.pugx.org/zaherg/laravel-shortpixel/composerlock)](https://packagist.org/packages/zaherg/laravel-shortpixel)
 
 Non-Official Laravel Package for the ShortPixel API. [ShortPixel](https://shortpixel.com) optimizes your images 
 and improves website performance by reducing images size. Read more at [http://shortpixel.com](http://shortpixel.com).
