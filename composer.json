@@ -1,0 +1,41 @@
+{
+    "name": "zaherg/laravel-shortpixel",
+    "description": "Laravel package for the ShortPixel API",
+    "type": "library",
+    "require": {
+        "php": "^7.2",
+        "ext-json": "^1.6",
+        "ext-mbstring": "^7.2",
+        "shortpixel/shortpixel-php": "^1.5",
+        "illuminate/support": "^5.7|^5.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zaher Ghaibeh",
+            "email": "z@zah.me"
+        }
+    ],
+    "scripts": {
+        "fix" : "php vendor/bin/php-cs-fixer fix --using-cache=no"
+    },
+    "minimum-stability": "dev",
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zaherg\\ShortPixel\\": "src//"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zaherg\\ShortPixel\\ServiceProvider"
+            ],
+            "aliases": {
+                "ShortPixel": "Zaherg\\ShortPixel\\Facades\\ShortPixel"
+            }
+        }
+    }
+}
