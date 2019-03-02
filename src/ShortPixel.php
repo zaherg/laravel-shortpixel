@@ -8,56 +8,8 @@ use ShortPixel\ClientException;
 use ShortPixel\PersistException;
 use ShortPixel\ShortPixel as MainClass;
 
-class ShortPixel
+class ShortPixel extends MainClass
 {
-    const MAX_ALLOWED_FILES_PER_CALL = 10;
-    const MAX_ALLOWED_FILES_PER_WEB_CALL = 30;
-    const CLIENT_MAX_BODY_SIZE = 48; // in MBytes.
-    const MAX_RETRIES = 6;
-
-    const LOSSY_EXIF_TAG = 'SPXLY';
-    const LOSSLESS_EXIF_TAG = 'SPXLL';
-
-    const RESIZE_OUTER = 1;
-    const RESIZE_INNER = 3;
-
-    /**
-     * @param $key - the ShortPixel API Key
-     */
-    public function setKey($key): void
-    {
-        MainClass::setKey($key);
-    }
-
-    /**
-     * @param $options - set the ShortPxiel options. Options defaults are the following:
-     *  "lossy" => 1, // 1 - lossy, 0 - lossless
-     * "keep_exif" => 0, // 1 - EXIF is preserved, 0 - EXIF is removed
-     * "resize_width" => null, // in pixels. null means no resize
-     * "resize_height" => null,
-     * "cmyk2rgb" => 1,
-     * "notify_me" => null, // should contain full URL of of notification script (notify.php)
-     * "wait" => 30,
-     * //local options
-     * "total_wait" => 30,
-     * "base_url" => null, // base url of the images - used to generate the path for toFile by extracting from original URL and using the remaining path as relative path to base_path
-     * "base_path" => "/tmp", // base path for the saved files
-     */
-    public function setOptions($options)
-    {
-        return MainClass::setOptions($options);
-    }
-
-    /**
-     * @param $name - option name
-     *
-     * @return mixed
-     */
-    public function opt($name)
-    {
-        return MainClass::opt($name);
-    }
-
     /**
      * @param $paths
      * @param $basePath - common base path used to determine the subfolders that will be created in the destination
@@ -164,17 +116,6 @@ class ShortPixel
      */
     public function fromUrls($urls)
     {
-        $source = new Source();
-        return $source->fromUrls($urls);
-    }
-
-    /**
-     * @throws \ShortPixel\AccountException
-     *
-     * @return \ShortPixel\Client singleton
-     */
-    public static function getClient()
-    {
-        return MainClass::getClient();
+        return (new Source())->fromUrls($urls);
     }
 }

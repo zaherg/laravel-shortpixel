@@ -9,7 +9,7 @@ class ServiceProvider extends BaseServiceProvider
     public function boot(): void
     {
         $this->publishes([
-            __DIR__.'/../config/shortpixel.php' => base_path('config/shortpixel.php')
+            __DIR__ . '/../config/shortpixel.php' => base_path('config/shortpixel.php'),
         ], 'config');
     }
 
@@ -22,6 +22,6 @@ class ServiceProvider extends BaseServiceProvider
             return $shortpixel;
         });
 
-        $this->mergeConfigFrom(__DIR__.'/../config/shortpixel.php','shortpixel');
+        $this->mergeConfigFrom(__DIR__ . '/../config/shortpixel.php', 'shortpixel');
     }
 }
