@@ -1,6 +1,7 @@
 {
     "name": "zaherg/laravel-shortpixel",
-    "description": "Laravel package for the ShortPixel API",
+    "description": "Laravel 5 package for the ShortPixel API",
+    "keywords": ["laravel", "laravel5", "shortpixel", "integration", "image", "optimization"],
     "type": "library",
     "require": {
         "php": "^7.2",

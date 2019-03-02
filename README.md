@@ -1,13 +1,9 @@
 [<img src="https://travis-ci.org/short-pixel-optimizer/shortpixel-php.svg?branch=master" alt="Build Status">](https://travis-ci.org/short-pixel-optimizer/shortpixel-php)
 
-# ShortPixel SDK and API client for Laravel
+# Non-Official Laravel Package for ShortPixel SDK and API 
 
-Non-Official Laravel Package for the ShortPixel API, used for [ShortPixel](https://shortpixel.com) ShortPixel optimizes your images 
+Non-Official Laravel Package for the ShortPixel API. [ShortPixel](https://shortpixel.com) optimizes your images 
 and improves website performance by reducing images size. Read more at [http://shortpixel.com](http://shortpixel.com).
-
-## WIP
-Please note that this package is still at work in progress phase, you may face many issues, but am trying to have everything
-up and running without any problems.
 
 ## Documentation
 
@@ -35,9 +31,15 @@ Get your API Key from https://shortpixel.com/free-sign-up
 
 ## Usage
 
+Add the API Key to your `.env` file
+
+```bash
+SHORTPIXEL_API_KEY=
+```
+
+Then you can use it as the following examples:
+
 ```php
-// Set up the API Key. 
-ShortPixel::setKey("YOUR_API_KEY");
 
 // Compress with default settings
 ShortPixel::fromUrls("https://your.site/img/unoptimized.png")->toFiles("/path/to/save/to");
@@ -90,7 +92,7 @@ while(!$stop) {
 }
 
 //Get account status and credits info:
-$ret = ShortPixel::getClient()->apiStatus(YOUR_API_KEY);
+$ret = ShortPixel::getClient()->apiStatus(config('shortpixel.key'));
 
 ```
 
