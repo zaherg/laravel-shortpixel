@@ -10,7 +10,7 @@ and improves website performance by reducing images size. Read more at [http://s
 
 ## Documentation
 
-[Go to the documentation for the PHP client](https://shortpixel.com/api-tools).
+[Go to the documentation for the PHP client](https://github.com/short-pixel-optimizer/shortpixel-php).
 
 ## Installation
 
