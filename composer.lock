@@ -344,16 +344,16 @@
         },
         {
             "name": "shortpixel/shortpixel-php",
-            "version": "1.5.6",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/short-pixel-optimizer/shortpixel-php.git",
-                "reference": "98bc6eb4dff44faa184a64b1c202f960c7b2346a"
+                "reference": "44691dbc22e52c6365dc79a30fe6d3b7ee6cfc4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/short-pixel-optimizer/shortpixel-php/zipball/98bc6eb4dff44faa184a64b1c202f960c7b2346a",
-                "reference": "98bc6eb4dff44faa184a64b1c202f960c7b2346a",
+                "url": "https://api.github.com/repos/short-pixel-optimizer/shortpixel-php/zipball/44691dbc22e52c6365dc79a30fe6d3b7ee6cfc4e",
+                "reference": "44691dbc22e52c6365dc79a30fe6d3b7ee6cfc4e",
                 "shasum": ""
             },
             "require": {
@@ -395,7 +395,7 @@
                 "optimize",
                 "shortpixel"
             ],
-            "time": "2019-07-15T12:51:03+00:00"
+            "time": "2019-10-22T10:01:41+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
